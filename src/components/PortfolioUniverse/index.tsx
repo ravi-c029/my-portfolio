@@ -408,7 +408,7 @@ export default function PortfolioUniverse() {
               
               <motion.div variants={sciFiItemVariants} className="flex flex-wrap items-center gap-4 text-sm sm:text-base md:text-lg text-slate-300 mb-8">
                 <span className="px-5 py-2 bg-slate-900/80 backdrop-blur-md rounded-sm border-l-2 border-r-2 border-cyan-500/50 shadow-[0_0_10px_rgba(6,182,212,0.3)]">
-                  SYSTEM STATUS: <span className="text-cyan-400 font-semibold animate-pulse">ONLINE</span>
+                  Profile: <span className="text-cyan-400 font-semibold animate-pulse">Active</span>
                 </span>
                 <span className="px-5 py-2 bg-slate-900/80 backdrop-blur-md rounded-sm border-l-2 border-r-2 border-purple-500/50 shadow-[0_0_10px_rgba(168,85,247,0.3)]">
                   CPI: <span className="text-purple-400 font-semibold">9.53</span>
@@ -448,7 +448,7 @@ export default function PortfolioUniverse() {
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
               <div className="relative bg-slate-900/80 backdrop-blur-xl border border-cyan-500/30 rounded-2xl p-6 sm:p-8 md:p-10">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-cyan-400 flex items-center gap-3 font-mono tracking-wider">
-                  <span className="text-blue-500">{'>'}</span> INIT_SUMMARY
+                  <span className="text-blue-500">{'>'}</span> SUMMARY
                   <motion.div 
                     animate={{ opacity: [1, 0, 1] }} 
                     transition={{ repeat: Infinity, duration: 1 }} 
@@ -473,7 +473,7 @@ export default function PortfolioUniverse() {
               className="mb-20 md:mb-32"
             >
               <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-cyan-400 flex items-center gap-4 uppercase font-mono tracking-widest pl-4 border-l-4 border-cyan-500 shadow-[-10px_0_15px_-10px_rgba(6,182,212,0.8)]">
-                Experience_Logs
+                Experience
               </h2>
               
               <div className="space-y-8 md:space-y-12">
@@ -542,7 +542,7 @@ export default function PortfolioUniverse() {
               className="mb-20 md:mb-32"
             >
               <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-cyan-400 flex items-center gap-4 uppercase font-mono tracking-widest pl-4 border-l-4 border-blue-500 shadow-[-10px_0_15px_-10px_rgba(59,130,246,0.8)]">
-                System_Modules
+                Projects
               </h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
@@ -601,7 +601,7 @@ export default function PortfolioUniverse() {
               className="mb-20 md:mb-32"
             >
               <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-cyan-400 flex items-center gap-4 uppercase font-mono tracking-widest pl-4 border-l-4 border-purple-500 shadow-[-10px_0_15px_-10px_rgba(168,85,247,0.8)]">
-                Core_Competencies
+                Skills
               </h2>
               
               <div className="grid sm:grid-cols-2 gap-6 lg:gap-8">
@@ -648,7 +648,7 @@ export default function PortfolioUniverse() {
               className="mb-16"
             >
               <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-cyan-400 flex items-center gap-4 uppercase font-mono tracking-widest pl-4 border-l-4 border-yellow-500 shadow-[-10px_0_15px_-10px_rgba(234,179,8,0.8)]">
-                Milestones & Accolades
+                Milestones & Achievements
               </h2>
               
               <div className="grid sm:grid-cols-2 gap-6">
@@ -662,7 +662,7 @@ export default function PortfolioUniverse() {
                       <Award className="w-6 h-6 sm:w-8 sm:h-8" />
                     </div>
                     <div>
-                      <h4 className="text-lg sm:text-xl font-bold text-white mb-1">School Topper</h4>
+                      <h4 className="text-lg sm:text-xl font-bold text-white mb-1">Block Topper</h4>
                       <p className="text-slate-400 font-mono text-sm">(94.6%, BSEB 2022)</p>
                     </div>
                   </div>
@@ -733,7 +733,7 @@ export default function PortfolioUniverse() {
                 <div className="absolute bottom-0 right-0 w-2 h-2 border-b-2 border-r-2 border-white opacity-0 group-hover:opacity-100 transition-opacity z-10" />
               </motion.button>
               <p className="mt-8 text-slate-500 font-mono text-sm tracking-widest uppercase">
-                End of Transmission
+                Ravi Kumar Keshari
               </p>
             </motion.div>
           </div>

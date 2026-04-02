@@ -53,3 +53,36 @@ body {
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb) transparent;
 }
+
+/* --- ACCESSIBILITY: Reduced Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- PORTAL BUTTON ANIMATIONS --- */
+@keyframes portal-orbit {
+  0% {
+    transform: rotate(0deg) translateX(50px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px) rotate(-360deg);
+  }
+}
+
+.portal-btn:hover .portal-orbit-dot {
+  animation: portal-orbit 3s linear infinite;
+  display: block;
+}
+
+.portal-orbit-dot {
+  display: none;
+  top: calc(50% - 3px);
+  left: calc(50% - 3px);
+}

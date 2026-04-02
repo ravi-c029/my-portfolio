@@ -9,7 +9,11 @@ import Scene from "@/components/3d/Scene";
 import Navbar from "@/components/layout/Navbar";
 import CommandPalette from "@/components/ui/CommandPalette";
 import BootSequence from "@/components/ui/BootSequence";
+import dynamic from "next/dynamic";
 
+const PortfolioUniverse = dynamic(() => import("@/components/PortfolioUniverse"), {
+  ssr: false,
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <CommandPalette />
         <BootSequence />
+        <PortfolioUniverse />
         
         <main className="relative z-10 w-full max-w-7xl mx-auto px-6 py-24 overflow-x-hidden">
           {children}

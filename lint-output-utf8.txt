@@ -1,0 +1,330 @@
+﻿
+> my-portfolio@0.1.0 lint
+> eslint
+
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\app\privacy\page.tsx
+  5:23  warning  'Lock' is defined but never used    @typescript-eslint/no-unused-vars
+  5:29  warning  'EyeOff' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\app\terms\page.tsx
+  5:17  warning  'Gavel' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\3d\SpatialGrid.tsx
+  196:18  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\3d\SpatialGrid.tsx:196:18
+  194 |
+  195 |     for (let i = 0; i < bgParticleCount; i++) {
+> 196 |       const x = (Math.random() - 0.5) * 50;
+      |                  ^^^^^^^^^^^^^ Cannot call impure function
+  197 |       const y = (Math.random() - 0.5) * 50;
+  198 |       const z = (Math.random() - 0.5) * 50;
+  199 |                                                                                                                                   react-hooks/purity
+  197:18  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\3d\SpatialGrid.tsx:197:18
+  195 |     for (let i = 0; i < bgParticleCount; i++) {
+  196 |       const x = (Math.random() - 0.5) * 50;
+> 197 |       const y = (Math.random() - 0.5) * 50;
+      |                  ^^^^^^^^^^^^^ Cannot call impure function
+  198 |       const z = (Math.random() - 0.5) * 50;
+  199 |
+  200 |       pos[i * 3] = x;                                                                                                             react-hooks/purity
+  198:18  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\3d\SpatialGrid.tsx:198:18
+  196 |       const x = (Math.random() - 0.5) * 50;
+  197 |       const y = (Math.random() - 0.5) * 50;
+> 198 |       const z = (Math.random() - 0.5) * 50;
+      |                  ^^^^^^^^^^^^^ Cannot call impure function
+  199 |
+  200 |       pos[i * 3] = x;
+  201 |       pos[i * 3 + 1] = y;                                                                                                                                   react-hooks/purity
+  218:21  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\3d\SpatialGrid.tsx:218:21
+  216 |     for (let i = 0; i < fountainCount; i++) {
+  217 |       // Start randomly along the Y axis up from the tip
+> 218 |       pos[i * 3] = (Math.random() - 0.5) * 0.5;
+      |                     ^^^^^^^^^^^^^ Cannot call impure function
+  219 |       pos[i * 3 + 1] = 5 + Math.random() * 15; // 5 is the tip height
+  220 |       pos[i * 3 + 2] = (Math.random() - 0.5) * 0.5;
+  221 |                                   react-hooks/purity
+  219:28  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\3d\SpatialGrid.tsx:219:28
+  217 |       // Start randomly along the Y axis up from the tip
+  218 |       pos[i * 3] = (Math.random() - 0.5) * 0.5;
+> 219 |       pos[i * 3 + 1] = 5 + Math.random() * 15; // 5 is the tip height
+      |                            ^^^^^^^^^^^^^ Cannot call impure function
+  220 |       pos[i * 3 + 2] = (Math.random() - 0.5) * 0.5;
+  221 |
+  222 |       // Upward speed and outward spread                                 react-hooks/purity
+  220:25  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\3d\SpatialGrid.tsx:220:25
+  218 |       pos[i * 3] = (Math.random() - 0.5) * 0.5;
+  219 |       pos[i * 3 + 1] = 5 + Math.random() * 15; // 5 is the tip height
+> 220 |       pos[i * 3 + 2] = (Math.random() - 0.5) * 0.5;
+      |                         ^^^^^^^^^^^^^ Cannot call impure function
+  221 |
+  222 |       // Upward speed and outward spread
+  223 |       vel[i * 3] = (Math.random() - 0.5) * 0.04; // X spread                                react-hooks/purity
+  223:21  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\3d\SpatialGrid.tsx:223:21
+  221 |
+  222 |       // Upward speed and outward spread
+> 223 |       vel[i * 3] = (Math.random() - 0.5) * 0.04; // X spread
+      |                     ^^^^^^^^^^^^^ Cannot call impure function
+  224 |       vel[i * 3 + 1] = 0.04 + Math.random() * 0.06; // Y speed (Upwards)
+  225 |       vel[i * 3 + 2] = (Math.random() - 0.5) * 0.04; // Z spread
+  226 |     }                                                              react-hooks/purity
+  224:31  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\3d\SpatialGrid.tsx:224:31
+  222 |       // Upward speed and outward spread
+  223 |       vel[i * 3] = (Math.random() - 0.5) * 0.04; // X spread
+> 224 |       vel[i * 3 + 1] = 0.04 + Math.random() * 0.06; // Y speed (Upwards)
+      |                               ^^^^^^^^^^^^^ Cannot call impure function
+  225 |       vel[i * 3 + 2] = (Math.random() - 0.5) * 0.04; // Z spread
+  226 |     }
+  227 |     return { fPositions: pos, fVelocities: vel };  react-hooks/purity
+  225:25  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\3d\SpatialGrid.tsx:225:25
+  223 |       vel[i * 3] = (Math.random() - 0.5) * 0.04; // X spread
+  224 |       vel[i * 3 + 1] = 0.04 + Math.random() * 0.06; // Y speed (Upwards)
+> 225 |       vel[i * 3 + 2] = (Math.random() - 0.5) * 0.04; // Z spread
+      |                         ^^^^^^^^^^^^^ Cannot call impure function
+  226 |     }
+  227 |     return { fPositions: pos, fVelocities: vel };
+  228 |   }, []);                                       react-hooks/purity
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\PortfolioUniverse\index.tsx
+    4:35  warning  'useScroll' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+    4:46  warning  'useTransform' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+   31:5   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\PortfolioUniverse\index.tsx:31:5
+  29 |
+  30 |     // Particle class
+> 31 |     class Particle {
+     |     ^^^^^^^^^^^^^^^^
+> 32 |       x: number;
+     | ^^^^^^^^^^^^^^^^
+> 33 |       y: number;
+     ΓÇª
+     | ^^^^^^^^^^^^^^^^
+> 92 |       }
+     | ^^^^^^^^^^^^^^^^
+> 93 |     }
+     | ^^^^^^ Inline `class` declarations are not supported
+  94 |
+  95 |     // Shooting star class
+  96 |     class ShootingStar {
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                          react-hooks/unsupported-syntax
+   96:5   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\PortfolioUniverse\index.tsx:96:5
+   94 |
+   95 |     // Shooting star class
+>  96 |     class ShootingStar {
+      |     ^^^^^^^^^^^^^^^^^^^^
+>  97 |       x: number;
+      | ^^^^^^^^^^^^^^^^
+>  98 |       y: number;
+      ΓÇª
+      | ^^^^^^^^^^^^^^^^
+> 149 |       }
+      | ^^^^^^^^^^^^^^^^
+> 150 |     }
+      | ^^^^^^ Inline `class` declarations are not supported
+  151 |
+  152 |     const particles: Particle[] = [];
+  153 |     const shootingStars: ShootingStar[] = [];
+
+                                                                                                                                                                                                                                                                                                                                                                             react-hooks/unsupported-syntax
+  215:10  warning  'isVisible' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+  219:7   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\PortfolioUniverse\index.tsx:219:7
+  217 |   useEffect(() => {
+  218 |     if (isOpen) {
+> 219 |       setIsVisible(true);
+      |       ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  220 |     } else {
+  221 |       setIsVisible(false);
+  222 |     }  react-hooks/set-state-in-effect
+  617:65  warning  'index' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\layout\Footer.tsx
+  88:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\About.tsx
+    8:3   warning  'useMotionValue' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+   12:33  warning  'Cpu' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-unused-vars
+   12:38  warning  'Globe' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+   31:7   warning  'slideInFromLeft' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+  108:8   error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\About.tsx:108:8
+  106 |   const particles = Array.from({ length: 20 }, (_, i) => ({
+  107 |     id: i,
+> 108 |     x: Math.random() * 100,
+      |        ^^^^^^^^^^^^^ Cannot call impure function
+  109 |     y: Math.random() * 100,
+  110 |     size: Math.random() * 3 + 1,
+  111 |     duration: Math.random() * 8 + 6,  react-hooks/purity
+  109:8   error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\About.tsx:109:8
+  107 |     id: i,
+  108 |     x: Math.random() * 100,
+> 109 |     y: Math.random() * 100,
+      |        ^^^^^^^^^^^^^ Cannot call impure function
+  110 |     size: Math.random() * 3 + 1,
+  111 |     duration: Math.random() * 8 + 6,
+  112 |     delay: Math.random() * 4,                                react-hooks/purity
+  110:11  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\About.tsx:110:11
+  108 |     x: Math.random() * 100,
+  109 |     y: Math.random() * 100,
+> 110 |     size: Math.random() * 3 + 1,
+      |           ^^^^^^^^^^^^^ Cannot call impure function
+  111 |     duration: Math.random() * 8 + 6,
+  112 |     delay: Math.random() * 4,
+  113 |   }));                                react-hooks/purity
+  111:15  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\About.tsx:111:15
+  109 |     y: Math.random() * 100,
+  110 |     size: Math.random() * 3 + 1,
+> 111 |     duration: Math.random() * 8 + 6,
+      |               ^^^^^^^^^^^^^ Cannot call impure function
+  112 |     delay: Math.random() * 4,
+  113 |   }));
+  114 |                                                        react-hooks/purity
+  112:12  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\About.tsx:112:12
+  110 |     size: Math.random() * 3 + 1,
+  111 |     duration: Math.random() * 8 + 6,
+> 112 |     delay: Math.random() * 4,
+      |            ^^^^^^^^^^^^^ Cannot call impure function
+  113 |   }));
+  114 |
+  115 |   return (                                                                            react-hooks/purity
+  217:9   warning  'smoothRotate' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+  340:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @next/next/no-img-element
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\AdvancedEdge.tsx
+  22:38  error  Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\AdvancedEdge.tsx:22:38
+  20 |   // Real-time animation logic for the graph
+  21 |   const [bars, setBars] = useState(
+> 22 |     Array.from({ length: 15 }, () => Math.random() * 100),
+     |                                      ^^^^^^^^^^^^^ Cannot call impure function
+  23 |   );
+  24 |
+  25 |   useEffect(() => {  react-hooks/purity
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\Contact.tsx
+   68:14  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  178:86  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\Hero.tsx
+  142:9  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\Portfolio.tsx
+   7:3  warning  'ArrowRight' is defined but never used   @typescript-eslint/no-unused-vars
+   8:3  warning  'ArrowDown' is defined but never used    @typescript-eslint/no-unused-vars
+  11:3  warning  'MonitorPlay' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\Process.tsx
+    6:40  warning  'useTransform' is defined but never used  @typescript-eslint/no-unused-vars
+  134:72  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\Services.tsx
+  104:12  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  376:58  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\sections\Testimonials.tsx
+  56:16  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  89:9   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  89:29  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  94:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\ui\BootSequence.tsx
+  13:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\ui\BootSequence.tsx:13:7
+  11 |   useEffect(() => {
+  12 |     if (isSpatialMode) {
+> 13 |       setIsBooting(true);
+     |       ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  14 |
+  15 |       const timer = setTimeout(() => {
+  16 |         setIsBooting(false);  react-hooks/set-state-in-effect
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\ui\CommandPalette.tsx
+   7:3   warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+  13:10  warning  'cn' is defined but never used          @typescript-eslint/no-unused-vars
+
+C:\Users\ravik\Desktop\Web_Development\ravi_portfolio\my-portfolio\src\components\ui\ProcessModal.tsx
+    3:40  warning  'AnimatePresence' is defined but never used  @typescript-eslint/no-unused-vars
+   12:3   warning  'Zap' is defined but never used              @typescript-eslint/no-unused-vars
+  121:70  error    Unexpected any. Specify a different type     @typescript-eslint/no-explicit-any
+
+Γ£û 52 problems (26 errors, 26 warnings)
+
